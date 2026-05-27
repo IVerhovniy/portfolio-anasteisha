@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hero = document.querySelector(".hero-content, .project-hero");
     if (hero && typeof gsap !== 'undefined') {
         gsap.from(hero.querySelectorAll(".text-h1, .text-p"), { 
-            y: '110%', duration: 0.8, ease: 'power3.out', stagger: 0.15, delay: 0.2 
+            y: '110%', duration: 0.3, ease: 'power3.out', stagger: 0.15, delay: 0.3 
         });
         const profile = document.querySelector('.profile-card, .project-hero__tag');
         if (profile) gsap.fromTo(profile, { opacity: 0, scale: 0.95 }, { 
